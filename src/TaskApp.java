@@ -17,7 +17,7 @@ public class TaskApp {
         DeleteTaskService deleteTaskService = new DeleteTaskService(repository);
         UserInput userInput = new UserInput();
 
-        UserMenu userMenu = new UserMenu(addTaskService,findTaskService,userInput);
+        UserMenu userMenu = new UserMenu(addTaskService,findTaskService,userInput,deleteTaskService);
 
         userMenu.menu();
 
